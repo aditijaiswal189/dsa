@@ -36,3 +36,34 @@ function checkSecondLargest(arr) {
 }
 
 console.log(checkSecondLargest(arr2));
+
+///loop in loop
+for (let i = 5; i > 0; i--) {
+  for (let j = 0; j < i; j++) {
+    console.log(i, j);
+  }
+}
+
+// star pattern
+let n = 4;
+for (let i = 0; i < n; i++) {
+  let row = " ";
+  for (let j = 0; j < n; j++) {
+    row = row + " *";
+  }
+  // console.log(row);
+}
+
+// print below star pattern
+// *
+// **
+// ***
+// ****
+
+for (let i = 0; i < 4; i++) {
+  let row = " ";
+  for (let j = 0; j <= i; j++) {
+    row = row + " *";
+  }
+  console.log(row);
+}
